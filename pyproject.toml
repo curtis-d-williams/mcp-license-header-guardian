@@ -3,9 +3,9 @@ requires = ["setuptools>=68", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "mcp-guardian-template"
+name = "mcp-license-header-guardian"
 version = "0.1.0"
-description = "Deterministic, network-free, read-only MCP guardian template (Tier 1 baseline)."
+description = "Deterministic, network-free, read-only MCP guardian that enforces license headers in tracked Python files (Tier 1)."
 readme = "README.md"
 requires-python = ">=3.11"
 license = { file = "LICENSE" }
@@ -13,7 +13,7 @@ authors = [{ name = "Curtis D. Williams" }]
 dependencies = ["fastmcp>=2.0.0"]
 
 [project.scripts]
-mcp-guardian-template = "mcp_guardian_template.server:main"
+mcp-license-header-guardian = "mcp_license_header_guardian.server:main"
 
 [tool.pytest.ini_options]
 addopts = "-q"

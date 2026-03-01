@@ -1,6 +1,6 @@
-# mcp-guardian-template
+# mcp-license-header-guardian
 
-Deterministic, network-free, read-only MCP guardian template (Tier 1 baseline).
+Deterministic, network-free, read-only MCP guardian that enforces license headers in tracked Python files (Tier 1).
 
 ## What this repo is for
 
@@ -13,7 +13,7 @@ It provides:
 
 ## Invariants (do not violate under V1)
 
-- One tool only: `evaluate_repo`
+- One tool only: `check_license_header`
 - Output schema keys are fixed
 - Fail-closed on invalid input or internal error
 - No timestamps, randomness, environment metadata
@@ -34,11 +34,11 @@ pytest -q
 
 Print canonical JSON output:
 
-python3 -c "from mcp_guardian_template.server import evaluate_repo, canonical_json; print(canonical_json(evaluate_repo('.')))"
+python3 -c "from mcp_license_header_guardian.server import check_license_header, canonical_json; print(canonical_json(check_license_header('.')))"
 
 ## MCP server
 
 Run:
 
-mcp-guardian-template
+mcp-license-header-guardian
 
