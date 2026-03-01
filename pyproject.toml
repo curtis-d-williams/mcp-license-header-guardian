@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "mcp-license-header-guardian"
-version = "0.1.0"
+version = "0.1.1"
 description = "Deterministic, network-free, read-only MCP guardian that enforces license headers in tracked Python files (Tier 1)."
 readme = "README.md"
 requires-python = ">=3.11"
